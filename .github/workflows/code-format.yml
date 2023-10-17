@@ -4,26 +4,4 @@ on: push
 
 jobs:
   format-code:
-<<<<<<< HEAD
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ github.head_ref }}
-          token: ${{ secrets.GIT_AUTO_COMMIT_ACTION }}
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "20.x"
-      # Other steps that change files in the repository
-      - run: npm ci
-      - run: npm run format
-      # Commit all changed files back to the repository
-      - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Apply formating changes
-          branch: ${{ github.head_ref }}
-=======
     uses: tjvans/github-config/.github/workflows/code-format.yml@main
->>>>>>> a1af285 (ci: switch to shared action workflow)
