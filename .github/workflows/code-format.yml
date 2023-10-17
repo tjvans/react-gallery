@@ -1,9 +1,10 @@
-name: Format
+name: reusable code-format
 
 on: push
 
 jobs:
   format-code:
+<<<<<<< HEAD
     runs-on: ubuntu-latest
 
     steps:
@@ -23,3 +24,6 @@ jobs:
         with:
           commit_message: Apply formating changes
           branch: ${{ github.head_ref }}
+=======
+    uses: tjvans/github-config/.github/workflows/code-format.yml@main
+>>>>>>> a1af285 (ci: switch to shared action workflow)
