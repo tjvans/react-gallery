@@ -22,3 +22,4 @@ jobs:
         with:
           commit_message: Apply formating changes
           branch: ${{ github.head_ref }}
+          token: ${{ secrets.GIT_AUTO_COMMIT_ACTION }}
