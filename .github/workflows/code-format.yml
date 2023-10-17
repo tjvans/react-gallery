@@ -5,3 +5,5 @@ on: push
 jobs:
   format-code:
     uses: tjvans/github-config/.github/workflows/code-format.yml@main
+    with:
+      token: ${{ secret.GIT_AUTO_COMMIT_ACTION }}
