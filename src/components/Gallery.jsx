@@ -29,7 +29,7 @@ export default function Gallery() {
       },
       profession: "Physicist",
     },
-  ]
+  ];
 
   let person = {
     name: "Gregorio Y. Zara",
