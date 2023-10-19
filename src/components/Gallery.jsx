@@ -39,14 +39,12 @@ export default function Gallery() {
       imageType: ".jpg",
     },
     profession: "Scientist",
-  }
+  };
 
   return (
     <section>
       <h1>Amazing scientists</h1>
-      <Profile 
-        size={90}
-        person={person} />
+      <Profile size={90} person={person} />
     </section>
   );
 }
