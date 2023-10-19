@@ -5,13 +5,9 @@ export default function Profile(props) {
     <Card>
       <Avatar {...props} />
     </Card>
-  )
+  );
 }
 
-function Card({children}) {
-  return (
-    <div className="card">
-      {children}
-    </div>
-  )
+function Card({ children }) {
+  return <div className="card">{children}</div>;
 }
