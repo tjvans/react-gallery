@@ -1,4 +1,4 @@
-export default function Avatar({person, size}) {
+export default function Avatar({ person, size }) {
   return (
     <img
       className="avatar"
@@ -10,12 +10,12 @@ export default function Avatar({person, size}) {
   );
 }
 
-function getImageUrl(person, size = 's') {
-  let imageQuality = size >= 90 ? '' : 's'
+function getImageUrl(person, size = "s") {
+  let imageQuality = size >= 90 ? "" : "s";
   return (
     person.image.baseUrl +
     person.image.imageId +
     imageQuality +
     person.image.imageType
-  )
+  );
 }
