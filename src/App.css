@@ -4,6 +4,13 @@
   object-fit: cover;
 }
 
+.profile-container {
+  display: flex;
+  flex: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
 .card {
   width: fit-content;
   border-radius: 10%;
