@@ -1,29 +1,29 @@
 export const people = [
-    {
-      name: "Gregorio Y. Zara",
-      image: {
-        baseUrl: "https://i.imgur.com/",
-        imageId: "7vQD0fP",
-        imageType: ".jpg",
-      },
-      profession: "Scientist",
+  {
+    name: "Gregorio Y. Zara",
+    image: {
+      baseUrl: "https://i.imgur.com/",
+      imageId: "7vQD0fP",
+      imageType: ".jpg",
     },
-    {
-      name: "Katherine Johnson",
-      image: {
-        baseUrl: "https://i.imgur.com/",
-        imageId: "MK3eW3A",
-        imageType: ".jpg",
-      },
-      profession: "Mathematician",
+    profession: "Scientist",
+  },
+  {
+    name: "Katherine Johnson",
+    image: {
+      baseUrl: "https://i.imgur.com/",
+      imageId: "MK3eW3A",
+      imageType: ".jpg",
     },
-    {
-      name: "Lin Lanying",
-      image: {
-        baseUrl: "https://i.imgur.com/",
-        imageId: "1bX5QH6",
-        imageType: ".jpg",
-      },
-      profession: "Physicist",
+    profession: "Mathematician",
+  },
+  {
+    name: "Lin Lanying",
+    image: {
+      baseUrl: "https://i.imgur.com/",
+      imageId: "1bX5QH6",
+      imageType: ".jpg",
     },
-  ];
+    profession: "Physicist",
+  },
+];
