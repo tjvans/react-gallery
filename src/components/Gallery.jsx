@@ -2,20 +2,13 @@ import Profile from "./Profile";
 import { people } from "../assets/data";
 
 export default function Gallery() {
-  let person = {
-    name: "Gregorio Y. Zara",
-    image: {
-      baseUrl: "https://i.imgur.com/",
-      imageId: "7vQD0fP",
-      imageType: ".jpg",
-    },
-    profession: "Scientist",
-  };
-
+  const listItems = people.map(person =>
+      <Profile key={person.name} size={90} person={person} />
+    )
   return (
     <section>
       <h1>Amazing scientists</h1>
-      <Profile size={90} person={person} />
+      <section>{listItems}</section>
     </section>
   );
 }
