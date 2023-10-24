@@ -1,9 +1,9 @@
 export default function Bio({ person }) {
     return (
-        <div>
+        <div className="bio">
             <h1>Name</h1>
             <p>{person.name}</p>
-            <h1>Profession</h1>
+            <h3>Profession</h3>
             <p>{person.profession}</p>
         </div>
     )

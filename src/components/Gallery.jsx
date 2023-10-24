@@ -7,7 +7,7 @@ export default function Gallery() {
   ));
   return (
     <section>
-      <h1>Amazing scientists</h1>
+      <h1>Academic gallery</h1>
       <div className="profile-container">{listItems}</div>
     </section>
   );
