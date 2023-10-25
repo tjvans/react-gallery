@@ -1,4 +1,5 @@
 import Profile from "./Profile";
+import Search from "./Search";
 import { people } from "../assets/data";
 
 export default function Gallery() {
