@@ -10,7 +10,7 @@
 .search-input {
   display: flex;
   column-gap: 5px;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin: 15px 20px;
 }

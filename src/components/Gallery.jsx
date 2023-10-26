@@ -4,8 +4,8 @@ import { people } from "../assets/data";
 import { useState } from "react";
 
 export default function Gallery() {
-  const [query, setQuery] = useState('')
-  
+  const [query, setQuery] = useState("");
+
   const listItems = people.map((person) => (
     <Profile key={person.name} size={90} person={person} />
   ));
