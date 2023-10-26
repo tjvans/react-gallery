@@ -1,3 +1,7 @@
 export default function Search() {
-  return;
+  return (
+    <div className='search-container'>
+      <h1>Academic gallery</h1>
+    </div>
+  )
 }
