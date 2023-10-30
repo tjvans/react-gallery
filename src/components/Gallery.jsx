@@ -12,7 +12,7 @@ export default function Gallery() {
 
   return (
     <>
-      <Search />
+      <Search queryText={query} onChangeQueryText={setQuery} />
       <div className="profile-container">{listItems}</div>
     </>
   );
