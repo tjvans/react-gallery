@@ -5,6 +5,7 @@ export default function Search({ queryText, handleChange }) {
       <label className="search-input">
         <h3>Search: </h3>
         <input
+          className="query-input"
           type="text"
           value={queryText}
           placeholder="Search by name or profession..."
