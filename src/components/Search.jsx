@@ -1,4 +1,4 @@
-export default function Search({ queryText, onChangeQueryText }) {
+export default function Search({ queryText, handleChange }) {
   return (
     <div className="search-container">
       <h1>Academic gallery</h1>
@@ -8,7 +8,7 @@ export default function Search({ queryText, onChangeQueryText }) {
           type="text"
           value={queryText}
           placeholder="Search by name or profession..."
-          onChange={(e) => onChangeQueryText(e.target.value)}
+          onChange={handleChange}
         />
       </label>
     </div>

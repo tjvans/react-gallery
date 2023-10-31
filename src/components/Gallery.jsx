@@ -6,13 +6,24 @@ import { useState } from "react";
 export default function Gallery() {
   const [query, setQuery] = useState("");
 
-  const listItems = people.map((person) => (
+  function handleChange(e) {
+    setQuery(e.target.value)
+  }
+
+  function queryFilter(items, query) {
+    query = query.toLowerCase()
+    return items.filter(item =>
+      item.name.split(' ').some(word => 
+        word.toLowerCase().startsWith(query)))
+  }
+
+  const listItems = queryFilter(people, query).map((person) => (
     <Profile key={person.name} size={90} person={person} />
   ));
 
   return (
     <>
-      <Search queryText={query} onChangeQueryText={setQuery} />
+      <Search queryText={query} handleChange={handleChange} />
       <div className="profile-container">{listItems}</div>
     </>
   );
