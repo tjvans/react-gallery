@@ -12,9 +12,12 @@ export default function Gallery() {
 
   function queryFilter(items, query) {
     query = query.toLowerCase()
-    return items.filter(item =>
-      item.name.split(' ').some(word => 
-        word.toLowerCase().startsWith(query)))
+    const person = items.filter(item => {
+      return item.name.split(' ').some(word => 
+        word.toLowerCase().startsWith(query)) || 
+        item.profession.split(' ').some(word => 
+          word.toLowerCase().startsWith(query))})
+    return person
   }
 
   const listItems = queryFilter(people, query).map((person) => (
