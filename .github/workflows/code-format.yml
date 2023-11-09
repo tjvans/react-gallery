@@ -3,6 +3,7 @@ name: reusable code-format
 on: push
 
 permissions:
+  actions: write
   contents: write
 
 jobs:
