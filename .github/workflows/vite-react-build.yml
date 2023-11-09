@@ -10,4 +10,5 @@ on:
 jobs:
   deploy-gh-pages:
     uses: tjvans/.github/workflows/vite-react-gh-pages-deploy.yml@main
-    secrets: inherit
+    with:
+      repo-token: ${{secrets.SHARED_WORKFLOW}}

@@ -7,4 +7,5 @@ on:
 jobs:
   format-code:
     uses: tjvans/github-config/.github/workflows/code-format.yml@main
-    secrets: inherit
+    with:
+      repo-token: ${{secrets.SHARED_WORKFLOW}}
