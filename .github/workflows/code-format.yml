@@ -1,9 +1,10 @@
 name: reusable code-format
 
-on: push
+on: 
+  push:
+  workflow_dispatch:
 
 permissions:
-  actions: write
   contents: write
 
 jobs:
