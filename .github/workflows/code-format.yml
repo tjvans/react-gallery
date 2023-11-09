@@ -4,9 +4,6 @@ on:
   push:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   format-code:
     uses: tjvans/github-config/.github/workflows/code-format.yml@main
