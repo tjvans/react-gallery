@@ -9,6 +9,6 @@ on:
 
 jobs:
   deploy-gh-pages:
-    uses: tjvans/.github/workflows/vite-react-gh-pages-deploy.yml@main
+    uses: tjvans/github-config/.github/workflows/vite-react-gh-pages-deploy.yml@main
     with:
       repo-token: ${{secrets.SHARED_WORKFLOW}}
