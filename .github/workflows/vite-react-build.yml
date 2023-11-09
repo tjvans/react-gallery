@@ -10,5 +10,3 @@ on:
 jobs:
   deploy-gh-pages:
     uses: tjvans/github-config/.github/workflows/vite-react-gh-pages-deploy.yml@main
-    with:
-      SHARED_WORKFLOW: ${{secrets.SHARED_WORKFLOW}}
