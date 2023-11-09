@@ -1,0 +1,15 @@
+name: reusable workflows
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  format-code:
+    uses: tjvans/github-config/.github/workflows/code-format.yml@main
+    secrets: inherit
+  vite-react-build:
+    needs: format-code
+    deploy-gh-pages:
+    uses: tjvans/github-config/.github/workflows/vite-react-gh-pages-deploy.yml@main
+    secrets: inherit
