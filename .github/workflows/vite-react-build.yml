@@ -11,4 +11,4 @@ jobs:
   deploy-gh-pages:
     uses: tjvans/github-config/.github/workflows/vite-react-gh-pages-deploy.yml@main
     with:
-      repo-token: ${{secrets.SHARED_WORKFLOW}}
+      SHARED_WORKFLOW: ${{secrets.SHARED_WORKFLOW}}

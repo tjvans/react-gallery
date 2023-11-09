@@ -8,4 +8,4 @@ jobs:
   format-code:
     uses: tjvans/github-config/.github/workflows/code-format.yml@main
     with:
-      repo-token: ${{secrets.SHARED_WORKFLOW}}
+      SHARED_WORKFLOW: ${{secrets.SHARED_WORKFLOW}}
