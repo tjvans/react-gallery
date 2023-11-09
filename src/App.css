@@ -1,10 +1,15 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .search-container {
   display: flex;
   flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  margin: 30px;
+  margin: 0 30px 0 30px;
   padding: 0 20px 0 20px;
-  min-width: 390px;
 }
 
 .search-input {
@@ -21,12 +26,10 @@
 
 .profile-container {
   display: flex;
-  flex: auto;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 30px;
   padding: 0 20px 0 20px;
-  min-width: 470px;
 }
 
 .card {
@@ -49,4 +52,21 @@
 
 .bio {
   padding: 0px 20px 5px 5px;
+}
+
+#github-link {
+  font-family:Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  text-decoration: none;
+  
+  & span {
+    font-size: 14px;
+  }
+
+  & img {
+    height: 20px;
+    vertical-align: middle;
+  }
 }
