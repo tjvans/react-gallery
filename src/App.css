@@ -1,4 +1,4 @@
-* {
+body {
   box-sizing: border-box;
   text-align: center;
 }
@@ -17,6 +17,7 @@
   column-gap: 5px;
   justify-content: center;
   align-items: center;
+  text-align: left;
   margin: 15px 20px;
 }
 
